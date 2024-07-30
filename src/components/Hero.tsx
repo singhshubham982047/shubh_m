@@ -4,18 +4,20 @@ import HeroCard from "./HeroCard";
 import { MagicCard } from "./magicui/magic-card";
 import { useTheme } from "next-themes";
 import { TechStack } from "./TechStack";
+import { Aboutme } from "./Aboutme";
+import ShinyButton from "./magicui/shiny-button";
 
 const Hero = () => {
   const { theme } = useTheme();
   return (
     <section
       id="hero"
-      className="hero container grid lg:grid-cols-2 place-items-center py-20 md:py-28 gap-10 overflow-hidden "
+      className="hero container grid md:grid-cols-2 place-items-center py-20 md:py-28 gap-10 overflow-hidden "
     >
       <HeroCard />
       <div className="">
         <div className="lg:text-start text-center  space-y-6 ">
-          <main className="text-5xl md:text-6xl font-bold">
+          <main className="text-3xl sm:text-4xl md:text-6xl font-bold">
             <h1 className="inline">
               <span className="block text-base whitespace-pre-wrap font-mono">
                 Hi, I&apos;m
@@ -31,6 +33,12 @@ const Hero = () => {
               </span>{" "}
               Developer.
             </h2>
+            <div className="flex md:hidden flex-col">
+              <Aboutme />
+              <a href="https://github.com/singhshubham982047" target="_blank">
+                <ShinyButton text="Repository" />
+              </a>
+            </div>
           </main>
         </div>
 

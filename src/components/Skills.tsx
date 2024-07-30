@@ -1,6 +1,7 @@
 import React from "react";
-import { MagicCard } from "./magicui/magic-card";
 import IconCloud from "@/components/magicui/icon-cloud";
+import SkillCard from "./SkillCard";
+import { DATA } from "@/data/data";
 
 const slugs = [
   "typescript",
@@ -37,7 +38,7 @@ const slugs = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-10 container md:px-32">
+    <section id="skills" className="py-10 container md:px-32 space-y-10 mt-12">
       <div className="text-2xl font-bold md:text-4xl text-center">
         <p>Skills and Tech Stack</p>
       </div>
@@ -46,10 +47,13 @@ const Skills = () => {
           <IconCloud iconSlugs={slugs} />
         </div>
         <div className="py-8  grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2: gap-5 lg:gap-x-32 place-items-center">
-          <MagicCard className="w-[200px] h-[300px]"></MagicCard>
-          <MagicCard className="w-[200px] h-[300px]"></MagicCard>
-          <MagicCard className="w-[200px] h-[300px]"></MagicCard>
-          <MagicCard className="w-[200px] h-[300px]"></MagicCard>
+          {DATA.skills.map((skill) => (
+            <SkillCard
+              plang={skill.stack}
+              title={skill.title}
+              key={skill.title}
+            />
+          ))}
         </div>
       </div>
     </section>

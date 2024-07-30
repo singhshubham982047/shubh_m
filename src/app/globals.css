@@ -69,6 +69,7 @@
 @layer base {
   * {
     border-color: hsl(var(--border-color));
+    scroll-behavior: smooth;
   }
   body {
     background: hsl(var(--background));
@@ -80,4 +81,7 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+::-webkit-scrollbar {
+  display: none;
 }

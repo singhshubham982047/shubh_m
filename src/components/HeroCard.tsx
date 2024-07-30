@@ -17,7 +17,7 @@ const HeroCard = () => {
     setColor(theme === "dark" ? "#ffffff" : "#000000");
   }, [theme]);
   return (
-    <div className="hidden lg:flex flex-row flex-wrap  relative  w-[650px] h-[500px] items-center justify-center ">
+    <div className="hidden md:flex flex-row flex-wrap  relative w-[550px] h-[350px]  lg:w-[650px] lg:h-[500px] items-center justify-center ">
       <MagicCard
         className="absolute right-[70px]  -top-8 w-96 h-[400px]  cursor-pointer flex-col   shadow-2xl whitespace-nowrap text-4xl"
         gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
