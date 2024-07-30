@@ -1,6 +1,5 @@
 import React from "react";
 import { MagicCard } from "./magicui/magic-card";
-import { url } from "inspector";
 
 const WorkCard = ({
   title,
@@ -20,7 +19,7 @@ const WorkCard = ({
           </div>
           <div className="flex flex-col text-start gap-4">
             <h2 className="text-xl font-semibold"> {title}</h2>
-            <p className="text-sm">{description}</p>
+            <p className="text-sm text-gray-500">{description}</p>
           </div>
         </div>
       </MagicCard>

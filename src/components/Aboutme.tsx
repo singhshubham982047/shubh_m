@@ -41,7 +41,7 @@ export function Aboutme() {
               <DrawerTitle className="text-3xl capitalize">
                 <div className="pb-6">
                   <h2 className="text-3xl md:text-4xl font-bold">
-                    <span className="bg-gradient-to-b from-primary/60 to-primary  bg-clip-text">
+                    <span className="bg-gradient-to-b from-primary/30 to-primary  bg-clip-text">
                       About
                     </span>{" "}
                     Me
@@ -55,6 +55,13 @@ export function Aboutme() {
                   <span>Role: Full-Stack Developer</span>
                   <span>Location: Hyderabad</span>
                 </div>
+                <p className="mt-4">
+                  To enhance my working capacities, professional skills, and
+                  business efficiencies and serve my organization in the best
+                  possible way with sheer determination and commitment. I thrive
+                  on building innovative and efficient solutions that solve
+                  real-world problems.
+                </p>
               </DrawerDescription>
             </DrawerHeader>
             <div className="p-4 pb-0"></div>

@@ -24,7 +24,7 @@ const ProjectCard = ({
     <div>
       <NeonGradientCard className="max-w-sm items-center justify-center ">
         <MagicCard
-          className="flex w-[280px] h-[360px] cursor-pointer flex-col items-center  shadow-2xl  text-3xl"
+          className="flex  md:w-[280px] h-[360px] cursor-pointer flex-col items-center  shadow-2xl  text-3xl"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
           <div className="flex flex-col w-full gap-4">
