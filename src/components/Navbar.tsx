@@ -76,7 +76,9 @@ export default function Navbar() {
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-6 mt-10  font-semibold">
                   {DATA.navbar.map((item) => (
-                    <Link href={item.href}>{item.label}</Link>
+                    <Link href={item.href} key={item.label}>
+                      {item.label}
+                    </Link>
                   ))}
                   {Object.entries(DATA.contact.social)
                     .filter(([_, social]) => social.navbar)
@@ -87,6 +89,7 @@ export default function Navbar() {
                           buttonVariants({ variant: "ghost", size: "icon" }),
                           "size-3"
                         )}
+                        key={social.name}
                       >
                         {name}
                       </Link>
@@ -115,6 +118,7 @@ export default function Navbar() {
                         buttonVariants({ variant: "ghost", size: "icon" }),
                         "size-5 sm:size-12"
                       )}
+                      key={item.label}
                     >
                       <item.icon
                         className={`size-3 sm:size-6`}
@@ -144,6 +148,7 @@ export default function Navbar() {
                           buttonVariants({ variant: "ghost", size: "icon" }),
                           "size-12"
                         )}
+                        key={social.name}
                       >
                         <social.icon className="size-4" />
                       </Link>

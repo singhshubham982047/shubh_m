@@ -1,6 +1,7 @@
 import { DATA } from "@/data/data";
 import React from "react";
 import { MagicCard } from "./magicui/magic-card";
+import Image from "next/image";
 
 const Education = () => {
   return (
@@ -18,7 +19,7 @@ const Education = () => {
             key={index + 1}
           >
             <div className="flex items-center">
-              <img src={item.logoUrl} alt="image" className="size-40" />
+              <Image src={item.logoUrl} alt="image" width={160} height={160} />
               <div className="space-y-3">
                 <h2 className="text-xl sm:text-2xl">
                   {item.degree}({item.start}-{item.end})
