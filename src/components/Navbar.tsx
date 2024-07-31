@@ -53,7 +53,7 @@ export default function Navbar() {
         window.removeEventListener("scroll", handleScroll);
       };
     }
-  }, [lastScrollY]);
+  }, [lastScrollY, handleScroll]);
   return (
     <>
       {visible && (

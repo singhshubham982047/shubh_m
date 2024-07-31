@@ -12,10 +12,10 @@ const Education = () => {
         <p>Education</p>
       </div>
       <div className="flex flex-col gap-3">
-        {DATA.education.map((item) => (
+        {DATA.education.map((item, index) => (
           <MagicCard
             className="flex w-full  cursor-pointer flex-row items-center  shadow-2xl"
-            key={item.degree}
+            key={index + 1}
           >
             <div className="flex items-center">
               <img src={item.logoUrl} alt="image" className="size-40" />

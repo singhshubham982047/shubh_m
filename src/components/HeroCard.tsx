@@ -19,7 +19,7 @@ const HeroCard = () => {
   return (
     <div className="hidden md:flex flex-row flex-wrap  relative w-[550px] h-[350px]  lg:w-[650px] lg:h-[500px] items-center justify-center ">
       <MagicCard
-        className="absolute right-[70px]  -top-8 w-96 h-[400px]  cursor-pointer flex-col   shadow-2xl whitespace-nowrap text-4xl"
+        className="absolute right-[70px]  -top-8 w-96 h-[400px]  cursor-pointer flex-col   shadow-2xl  text-4xl"
         gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
       >
         <ShineBorder
@@ -41,15 +41,15 @@ const HeroCard = () => {
                 className=" grayscale-[0%]   rounded-full w-32 h-32  object-cover "
               />
               <p>Shubham Singh</p>
-              <p>Full Stack Developer</p>
+              <p className="text-blue-500">Full Stack Developer</p>
             </div>
-            <div>
+            <div className="flex mt-4 items-center text-center">
               <span className="text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                I find immense satisfaction in converting ideas into practical
+                software that surpasses expectations.
               </span>
             </div>
             <div className="mt-4 flex gap-3">
-              {/* <ShinyButton text="About me" className="" /> */}
               <Aboutme />
               <a href="https://github.com/singhshubham982047" target="_blank">
                 <ShinyButton text="Repository" />

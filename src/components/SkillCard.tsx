@@ -13,8 +13,8 @@ const SkillCard = ({ plang, title }: { plang: string[]; title: string }) => {
         </div>
 
         <div className="flex flex-col items-start space-y-3 text-gray-600 w-[200px] p-5">
-          {plang.map((lang) => (
-            <span className=" flex">
+          {plang.map((lang, index) => (
+            <span className=" flex" key={index + 1}>
               {lang} <Check className="text-green-500" />
             </span>
           ))}

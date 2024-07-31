@@ -9,11 +9,12 @@ const Work = () => {
         <p>Work and Experiences</p>
       </div>
       <div className="flex flex-col gap-6 ">
-        {DATA.works.map((work) => (
+        {DATA.works.map((work, index) => (
           <WorkCard
             title={work.title}
             description={work.description}
             image={work.image}
+            key={index + 1}
           />
         ))}
       </div>
