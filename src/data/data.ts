@@ -83,8 +83,24 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Soil-Farming-Agent",
+      href: "https://soil-farming-agent-d3s3.vercel.app/",
+      dates: "Aug 2024 - Sep 2024",
+      active: true,
+      description:
+        "Soil farming agent helps to choose your crop according to soil type for better growth and production",
+      technologies: [
+        "/next.svg",
+        "/typescript.svg",
+        "/mongodb.svg",
+        "/tailwind.svg",
+      ],
+
+      image: "/soil-farming.png",
+    },
+    {
       title: "Imagify",
-      href: "https://chatcollect.com",
+      href: "http://imagify-green.vercel.app/",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
@@ -100,8 +116,8 @@ export const DATA = {
     },
     {
       title: "Blogsly",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      href: "https://blogsly.netlify.app/",
+      dates: "May 2024 - Jun 2024",
       active: true,
       description:
         "Build a blog app using Reactjs, Nodejs, Express, Redux, Mongodb, TailwindWhere users can login and sign up with their credentials, and create blogs in different categories and also read, update and delete their blog.",
@@ -116,17 +132,17 @@ export const DATA = {
     },
     {
       title: "Genimi Clone",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      href: "https://geminiclone47.netlify.app/",
+      dates: "July 2024 - Aug 2024",
       active: true,
       description: "Clone the gemini ai using Reactjs and Gemini Api",
       technologies: ["/react.svg", "/javascript.svg", "/tailwind.svg"],
 
-      image: "/blogsly.png",
+      image: "/gemini-clone.png",
     },
     {
       title: "Online Compiler",
-      href: "https://magicui.design",
+      href: "https://github.com/singhshubham982047/online-compiler",
       dates: "June 2023 - Present",
       active: true,
       description:
@@ -155,27 +171,27 @@ export const DATA = {
 
   works: [
     {
-      title: "Full Stack developer",
+      title: "Full Stack Developer - Soil-Farming-Agent Project",
       description:
-        "Build a blog app using Reactjs, Nodejs, Express, Redux, Mongodb, TailwindWhere users can login and sign up with their credentials, and create blogs in different categories and also read, update and delete their blog.",
+        "The Soil-Farming-Agent Project is a Next.js application that allows users to log in and explore various soil types, their properties, and the crops best suited for each soil type. Additionally, users can connect with seed distributors directly through the platform, making it easier to obtain the necessary seeds for their farming needs. Spearheaded the adoption of Next.js and integration of Authjs/NextAuth, seamlessly integrating OAuth authentication for Google, and email login, enabling SSR to boost search engine visibility.  Utilized Tailwind CSS for sleek UI design and Shadcn for modern UI design to improved user experience  Committed to creating responsive designs for optimal accessibility and search engine ranking. Key expertise includes Next.js,TanStack query for seamless data fetching and mutation, enhancing userexperience, Tailwind CSS, SSR, and SEO optimization & MERN",
       image: "/codetool.png",
     },
     {
-      title: "Full Stack developer",
+      title: "Full Stack Developer - AI-Powered SaaS Application",
       description:
-        "Build a blog app using Reactjs, Nodejs, Express, Redux, Mongodb, TailwindWhere users can login and sign up with their credentials, and create blogs in different categories and also read, update and delete their blog.",
+        " I led the development of a Software-as-a-Service (SaaS) application that integrates AI functionalities and a robustpayment and credit system. Leveraging Next.js 14, Clerk, MongoDB, Cloudinary AI, and Stripe, I ensured seamless integration and optimal functionality for users.",
       image: "/codeTyping.png",
     },
     {
-      title: "Full Stack developer",
+      title: "Full Stack Developer - Blogsly Blog Application",
       description:
-        "Build a blog app using Reactjs, Nodejs, Express, Redux, Mongodb, TailwindWhere users can login and sign up with their credentials, and create blogs in different categories and also read, update and delete their blog.",
+        " Developed a dynamic blog application utilizing React.js, MongoDB, and Redux, incorporating JSON Web Tokens (JWT) for secure authorization. designing and implementing route controllers and aggregation functions. Developed middleware for user uthentication using JWT tokens for secure access. Implemented efficient password hashing techniques using bcryptjs for enhanced security measures, Used Redux to manage states. Deployed the Node.js application with Express.js to Render, and React.js application to Render.",
       image: "/pairProgramming.png",
     },
     {
-      title: "Full Stack developer",
+      title: "Frontend Developer - Gemini Clone Project",
       description:
-        "Build a blog app using Reactjs, Nodejs, Express, Redux, Mongodb, TailwindWhere users can login and sign up with their credentials, and create blogs in different categories and also read, update and delete their blog.",
+        "The Gemini Clone Project is a web application that replicates the features and functionalities of the Gemini platform, providing users with a streamlined and secure environment",
       image: "/working.png",
     },
   ],
